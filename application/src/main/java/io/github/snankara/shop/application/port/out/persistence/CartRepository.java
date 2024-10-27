@@ -8,4 +8,5 @@ import java.util.Optional;
 public interface CartRepository {
     void add(Cart cart);
     Optional<Cart> findByCustomerId(CustomerId customerId);
+    void deleteByCustomerId(CustomerId customerId);
 }
